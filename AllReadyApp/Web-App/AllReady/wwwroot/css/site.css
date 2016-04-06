@@ -410,16 +410,16 @@ Navigation
     margin-top: 7px;
 }
 
+#CampaignInfo .panel {
+    border: none;
+}
+
 #CampaignInfo .panel-heading {
     background-color: white;
 }
 
 #CampaignInfo h3 {
     margin-top: 1px;
-}
-
-[data-toggle-accordion] {
-    cursor: pointer;
 }
 
 .task-panel .panel-heading {

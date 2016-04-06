@@ -45,6 +45,14 @@
             initializeTask(task);
         });
 
+        self.expandAll = function () {
+            debugger;
+            self.filteredUserTasks().filtered().forEach(function (task) {
+                debugger;
+                task.isExpanded(true);
+            });
+        }
+
         function initializeTask(task) {
             task.skillsWithIsUser = ko.observableArray(task.RequiredSkillObjects.map(withIsUserSkill.bind(null, userSkills)));
             task.unassociatedSkills = ko.computed(function() {
